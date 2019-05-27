@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    var wsServer = 'ws://127.0.0.1:9602';
+    var websocket = new WebSocket(wsServer);
+    websocket.onopen = function (evt) {
+        console.log("onopen");
+        var message = {
+            keyword: '杨女士',
+            status: '',
+            start: '',
+            end: ''
+        };
+        websocket.send(JSON.stringify(message)); //给websocket服务端发送数据
+    };
+    websocket.onclose = function (evt) {
+        console.log("onclose");
+    };
+    websocket.onmessage = function (evt) {
+        console.log('onmessage: ' + evt.data);
+    };
+    websocket.onerror = function (evt, e) {
+        console.log('Error occured: ' + evt.data);
+    };
+
+</script>
