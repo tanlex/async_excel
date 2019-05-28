@@ -8,10 +8,6 @@
 协程mysql、异步task任务。下载生成.xlsx文件采用PhpSpreadsheet类库。
      
    流程说明：  
-   php /app/empdown.php 为TCP服务端  
-   php /app/empdown_ws.php 为WebSocket服务端，并在接收到WebSocket客户端的数据时创建  
-   TCP客户端，并转发数据到TCP服务端  
-     
    WebSocket客户端->WebSocket服务端->onMessage函数中创建TCP客户端->转发数据至TCP服务端  
    ->异步Task任务处理数据生成excel->Task进程异步处理完成后推送数据至TCP客户端->TCP客户端  
    接收数据推送至WebSocket客户端。  
@@ -22,3 +18,7 @@
    upload --- 生成的xlsx文件目录  
    demo --- websocket客户端调用代码目录  
    vendor --- composer目录  
+     
+   启动说明： 
+   php /app/empdown.php 为启动TCP服务端  
+   php /app/empdown_ws.php 为启动WebSocket服务端，并在接收到WebSocket客户端的数据时创建TCP客户端，并转发数据到TCP服务端  
