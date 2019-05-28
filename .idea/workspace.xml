@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="434e00b8-0387-4e8e-98cd-2a58b64ae6b0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/empdown.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/empdown.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/empdown_ws.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/empdown_ws.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo/test.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,9 +16,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="648">
-                <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="621">
+                <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
               </first_editor>
               <second_editor />
             </state>
@@ -43,7 +41,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="359" />
     <option name="y" value="46" />
     <option name="width" value="1525" />
@@ -151,9 +149,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="648">
-            <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="621">
+            <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           </first_editor>
           <second_editor />
         </state>
