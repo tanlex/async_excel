@@ -1,8 +1,8 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Administrator
- * Date: 2019/5/23
+ * User: tanlex
+ * Date: 2019/5/28
  * Time: 15:26
  */
 
@@ -39,20 +39,23 @@ $ws_server->on('message', function (Swoole\WebSocket\Server $ws_server, $frame) 
     $client->on("receive", function(swoole_client $cli, $data) use ($ws_server,$fd){
         //调用websocket服务向websocket客户端返回数据
         $ws_server->push($fd, $data);
+        //关闭TCP客户端
+        $cli->close();
+        //关闭websocket客户端
+        $ws_server->close($fd);
     });
     $client->on("error", function(swoole_client $cli){
         echo "error\n";
     });
     $client->on("close", function(swoole_client $cli){
-        echo "Connection close\n";
+        echo "TCP Connection close\n";
     });
     $client->connect('127.0.0.1', 9601);
     /********************创建TCP异步客户端********************/
 });
 
 $ws_server->on('close', function ($ws_server, $fd) {
-    echo "client {$fd} closed\n";
+    echo "websocket client: {$fd} closed".PHP_EOL;
 });
 
 $ws_server->start();
-
