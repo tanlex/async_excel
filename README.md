@@ -19,6 +19,6 @@
    demo --- websocket客户端调用代码目录  
    vendor --- composer目录  
      
-   启动说明： 
+   启动说明：  
    php /app/empdown.php 为启动TCP服务端  
    php /app/empdown_ws.php 为启动WebSocket服务端，并在接收到WebSocket客户端的数据时创建TCP客户端，并转发数据到TCP服务端  
